@@ -19,10 +19,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 Mina Nakamura 
 
 #### Je startniveau:
-blauw (soms rood)
+Blauw.
 
 #### Je focus:
-responsive
+Responsive
  
 </details>
 
@@ -93,6 +93,7 @@ samen met je groepje opstellen
  
 - Geen classes gebruiken, maar is het dan nog wel mogelijk om een active class aan te maken, die was ook gebruikt in de les in de voorbeelden.
 - Js interacties, wat voor interactie is het minimuum
+- Wat is handig om het helemaal responsive te maken, %, vh/vw etc?
 
 
 ### Verslag van meeting
