@@ -40,11 +40,11 @@ nintendo.nl officiele site
 
 #### Screenshot(s) van de eerste pagina (small screen): 
 hier de naam van de pagina  
-<img src="homepagina.png" alt="home pagina/landings pagina van nintendo">
+<img src="homepagina.png" alt="home pagina van disneyland parijs">
 
 #### Screenshot(s) van de tweede pagina (small screen):
 hier de naam van de pagina  
-<img src="tweedepagina.png" alt="de pagina die de nintendo switch familie laat zien">
+<img src="tweedepagina.png" alt="">
  
 </details>
 
@@ -75,10 +75,11 @@ hier de naam van de pagina
 ## Voortgang 1 (week 2)
 
 <details>
-<summary>uitwerken voor 1e voortgang</summary>
+<summary>Tot nu toe heb ik persoonlijk eigenlijk alleen aandacht besteed aan de oefenopdrachten en nog totaal niet aan de website zelf. Wel heb ik de breakdown schets en een hele kleine begin gemaakt aan 1 html pagina. </summary>
 
 ### Stand van zaken
 hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+In het vorige schooljaar hadden we een project wwarbij we een mobile webpagina moesten maken die samen gaat met een internationale student guidebook. hierbij had een ik een fixed nav bar gemaakt in html/css, ik wilde voor dit project iets vergelijkbaars doen maar dit keer ook schaalbaar aangezien de vorige niet zo was. Dit ging een beetje stroef en nam ook wat tijd in aangezien ik heel veel ben vergeten in de vakantie, het was dus even wennen weer. Maar uiteindelijk is dit wel gelukt.
 
 
 ### Agenda voor meeting
@@ -89,6 +90,9 @@ samen met je groepje opstellen
 | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
 | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
 | ...            | ...                | ...          | ...              |
+ 
+- Geen classes gebruiken, maar is het dan nog wel mogelijk om een active class aan te maken, die was ook gebruikt in de les in de voorbeelden.
+- Js interacties, wat voor interactie is het minimuum
 
 
 ### Verslag van meeting
