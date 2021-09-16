@@ -38,11 +38,10 @@ Responsive
 Disneyland Parijs officiële Nederlandse site.
 
 #### Screenshot(s) van de eerste pagina (small screen): 
-hier de naam van de pagina  
-<img src="images/homepagina.png" alt="home pagina van disneyland parijs">
+Disneyland Parijs 
+<img src="images/eerstepagina.png" alt="home pagina van disneyland parijs">
 
 #### Screenshot(s) van de tweede pagina (small screen):
-hier de naam van de pagina  
 <img src="images/tweedepagina.png" alt="">
  
 </details>
@@ -54,7 +53,6 @@ hier de naam van de pagina
 ## Breakdownschets (week 1)
 
 <details>
-<summary>uitwerken na afloop 2e werkgroep</summary>
 
 ### de hele pagina: 
 <img src="images/" width="375px" alt="breakdown van de hele pagina">
