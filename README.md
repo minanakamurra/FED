@@ -33,18 +33,17 @@ Responsive
 ## Je website
 
 <details open>
-<summary>uitwerken voor kick-off werkgroep</summary>
 
 ### Je opdracht:
-nintendo.nl officiele site 
+Disneyland Parijs officiële Nederlandse site.
 
 #### Screenshot(s) van de eerste pagina (small screen): 
 hier de naam van de pagina  
-<img src="homepagina.png" alt="home pagina van disneyland parijs">
+<img src="images/homepagina.png" alt="home pagina van disneyland parijs">
 
 #### Screenshot(s) van de tweede pagina (small screen):
 hier de naam van de pagina  
-<img src="tweedepagina.png" alt="">
+<img src="images/tweedepagina.png" alt="">
  
 </details>
 
@@ -58,13 +57,13 @@ hier de naam van de pagina
 <summary>uitwerken na afloop 2e werkgroep</summary>
 
 ### de hele pagina: 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+<img src="images/" width="375px" alt="breakdown van de hele pagina">
 
 ### dynamisch deel (bijv menu): 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+<img src="images/" width="375px" alt="breakdown van een dynamisch deel">
 
 ### wellicht nog een dynamisch deel (bijv filter): 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+<img src="images/" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 
@@ -75,10 +74,10 @@ hier de naam van de pagina
 ## Voortgang 1 (week 2)
 
 <details>
-<summary>Tot nu toe heb ik persoonlijk eigenlijk alleen aandacht besteed aan de oefenopdrachten en nog totaal niet aan de website zelf. Wel heb ik de breakdown schets en een hele kleine begin gemaakt aan 1 html pagina. </summary>
+Tot nu toe heb ik persoonlijk eigenlijk alleen aandacht besteed aan de oefenopdrachten en nog totaal niet aan de website zelf. Wel heb ik de breakdown schets en een hele kleine begin gemaakt aan 1 html pagina. 
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 In het vorige schooljaar hadden we een project wwarbij we een mobile webpagina moesten maken die samen gaat met een internationale student guidebook. hierbij had een ik een fixed nav bar gemaakt in html/css, ik wilde voor dit project iets vergelijkbaars doen maar dit keer ook schaalbaar aangezien de vorige niet zo was. Dit ging een beetje stroef en nam ook wat tijd in aangezien ik heel veel ben vergeten in de vakantie, het was dus even wennen weer. Maar uiteindelijk is dit wel gelukt.
 
 
