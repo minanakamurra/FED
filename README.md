@@ -13,8 +13,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Jij
 
 <details open>
-<summary>uitwerken voor kick-off werkgroep</summary>
-
 ### Auteur:
 Mina Nakamura 
 
@@ -36,13 +34,16 @@ Responsive
 
 ### Je opdracht:
 Disneyland Parijs officiële Nederlandse site.
+https://www.disneylandparis.com/nl-nl/
+https://www.disneylandparis.com/nl-nl/disneyland-paris-beleving/
+ 
 
 #### Screenshot(s) van de eerste pagina (small screen): 
 Disneyland Parijs 
 <img src="images/eerstepagina.png" alt="home pagina van disneyland parijs">
 
 #### Screenshot(s) van de tweede pagina (small screen):
-<img src="images/tweedepagina.jpg" alt="tweede pagina van disneyland parijs">
+<img src="images/tweedepagina.png" alt="beleving pagina disneyland parijs">
  
 </details>
 
@@ -55,13 +56,13 @@ Disneyland Parijs
 <details>
 
 ### de hele pagina: 
-<img src="images/breakdown.png" width="375px" alt="breakdown van de hele pagina">
+<img src="images/" width="375px" alt="breakdown van de hele pagina">
 
 ### dynamisch deel (bijv menu): 
-<img src="images/breakdown2.png" width="375px" alt="breakdown van een dynamisch deel">
+<img src="images/" width="375px" alt="breakdown van een dynamisch deel">
 
 ### wellicht nog een dynamisch deel (bijv filter): 
-<img src="images/breakdown3.png" width="375px" alt="breakdown van nog een dynamisch deel">
+<img src="images/" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 
