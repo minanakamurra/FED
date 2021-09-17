@@ -42,7 +42,7 @@ Disneyland Parijs
 <img src="images/eerstepagina.png" alt="home pagina van disneyland parijs">
 
 #### Screenshot(s) van de tweede pagina (small screen):
-<img src="images/tweedepagina.png" alt="">
+<img src="images/tweedepagina.jpg" alt="tweede pagina van disneyland parijs">
  
 </details>
 
