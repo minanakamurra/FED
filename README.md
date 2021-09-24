@@ -85,22 +85,17 @@ samen met je groepje opstellen
 
 | student 1      | student 2          | student 3    | student 4        |
 | ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
+| Wat is handig om het helemaal responsive te maken, %, vh/vw etc?n  | en dit             | en ik dit    | en dan ik dat    |
+|  | dit als er tijd is | nog een punt | dit wil ik zeker |
 | ...            | ...                | ...          | ...              |
  
-- Geen classes gebruiken, maar is het dan nog wel mogelijk om een active class aan te maken, die was ook gebruikt in de les in de voorbeelden.
-- Js interacties, wat voor interactie is het minimuum
-- Wat is handig om het helemaal responsive te maken, %, vh/vw etc?
+- 
 
 
 ### Verslag van meeting
-hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
+- Om het responsive te maken is het in de meeste gevallen beter om % te gebruiken dan vw/vh.
+- Ik moet verder aan de website, ik ben nog helemaal niet ver.
 
 </details>
 
@@ -111,18 +106,16 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 ## Voortgang 2 (week 3)
 
 <details>
-<summary>uitwerken voor 2e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
+Ik heb in deze week een resrvering forulier en (bijna) al het tekst erin gezet. Hierbij heb ik nog niet zo veel styling geven dus dat gaat deze week gebeurd worden.
 
 ### Agenda voor meeting
 samen met je groepje opstellen
 
 | student 1      | student 2          | student 3    | student 4        |
 | ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
+| Hoe maak je een carousel/slider  | Hoe maak je een hamburger menu            | en ik dit    | en dan ik dat    |
 | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
 | ...            | ...                | ...          | ...              |
 
