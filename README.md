@@ -12,7 +12,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Jij
 
-<details open>
+<details>
 ### Auteur:
 Mina Nakamura 
 
@@ -30,7 +30,7 @@ Responsive
 
 ## Je website
 
-<details open>
+<details>
 
 ### Je opdracht:
 Disneyland Parijs officiële Nederlandse site.
@@ -89,7 +89,6 @@ samen met je groepje opstellen
 |  | dit als er tijd is | nog een punt | dit wil ik zeker |
 | ...            | ...                | ...          | ...              |
  
-- 
 
 
 ### Verslag van meeting
@@ -105,7 +104,7 @@ samen met je groepje opstellen
 
 ## Voortgang 2 (week 3)
 
-<details>
+<details open>
 
 ### Stand van zaken
 Ik heb in deze week een resrvering forulier en (bijna) al het tekst erin gezet. Hierbij heb ik nog niet zo veel styling geven dus dat gaat deze week gebeurd worden.
