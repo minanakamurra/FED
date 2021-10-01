@@ -104,7 +104,7 @@ samen met je groepje opstellen
 
 ## Voortgang 2 (week 3)
 
-<details open>
+<details>
 
 ### Stand van zaken
 Ik heb in deze week een resrvering forulier en (bijna) al het tekst erin gezet. Hierbij heb ik nog niet zo veel styling geven dus dat gaat deze week gebeurd worden.
@@ -136,7 +136,7 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 ## Toegankelijkheidstest (week 4)
 
 
-<details open>
+<details>
 <summary>uitwerken na test in 8e voortgang</summary>
 
 ### Bevindingen
