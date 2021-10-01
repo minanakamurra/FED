@@ -114,8 +114,8 @@ samen met je groepje opstellen
 
 | student 1      | student 2          | student 3    | student 4        |
 | ---            | ---                | ---          | ---              |
-| Hoe maak je een carousel/slider  | Hoe maak je een hamburger menu            | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
+| Hoe maak je een carousel/slider  |             | en ik dit    | en dan ik dat    |
+| Hoe maak je een hamburger menu | dit als er tijd is | nog een punt | dit wil ik zeker |
 | ...            | ...                | ...          | ...              |
 
 
@@ -160,7 +160,7 @@ Het is beter om eerst de h2 en h3's eerst te zetten i.p.v de inmages ookal staan
 
 ## Voortgang 3 (week 4)
 
-<details>
+<details open>
 <summary>uitwerken voor 3e voortgang</summary>
 
 ### Stand van zaken
@@ -173,8 +173,8 @@ samen met je groepje opstellen
 
 | student 1      | student 2          | student 3    | student 4        |
 | ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
+| wat voor javascript moet ik gberuiken |  focusstate en elementen omdraaien in css          | en ik dit    | en dan ik dat    |
+| instagram link  | dit als er tijd is | nog een punt | dit wil ik zeker |
 | ...            | ...                | ...          | ...              |
 
 
