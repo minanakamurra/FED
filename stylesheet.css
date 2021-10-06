@@ -14,8 +14,11 @@
     --bordershadowx: 5px;
     --bordershadowy: 5px;
 
-    --menubarheight: 2em;
+    --menubarheight: 4em;
     --menubaricon: 1em;
+    --menulogo: 2.5em;
+
+    --menuiconheight: 1.5em;
 
     --whitecolor: white;
 
@@ -40,18 +43,19 @@
     --bookingmarginbottom: 2em;
     --knopradius: 8em;
     --buttongradient1: rgb(22, 47, 156);
-    --buttongradient2: rgb(22, 73, 167);
+    --buttongradient2: rgb(37, 94, 199);
 
-    --huiskleurblauw: rgb(24, 28, 255);
+    --huiskleurblauw: rgb(38, 102, 221);
 
     --knopfontsize: .8em;
     --knopbordersize: 3px;
     --imgradius: .6em;
 
     --sliderimgwidth: 20em;
-    --sliderliwidth: 70%;
+    --sliderliwidth: 20em;
     --sliderliheight: 27em;
 }
+
 
 
 /*algemeen*****************************************************************/
@@ -63,7 +67,6 @@ li {
 body {
     max-width: 100vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-
 }
 
 section {
@@ -77,13 +80,6 @@ section {
 
 /*nav bar mobile version******************************************************/
 
-nav>ul:first-of-type {
-    background-color: var(--whitecolor);
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
 nav>ul:first-of-type>li {
     margin: .8em;
@@ -92,118 +88,265 @@ nav>ul:first-of-type>li {
 
 /*om menu en hamburger icon onderelkaar te zetten*/
 
-nav>ul:first-of-type>li:first-of-type {
+nav{
     display: flex;
-    align-items: center;
-    justify-content: center;
+}
+
+nav button {
+    display: flex;
     flex-direction: column;
+
+    all: unset;
+    z-index: 200;
+    position: absolute;
+
+    margin-left: .8em;
 }
 
-/*hamburger menu schalen*/
+nav ul:first-of-type{
+    background-color: var(--whitecolor);
 
-nav>ul:first-of-type>li:first-of-type>img {
+    left:0;
+    right:0;
+    width:100%;
+    height: var(--menubarheight);
+
+    z-index: 150;
+}
+
+/*hamburger menu schalen en positioneren*/
+
+nav button img {
+    display: flex;
     max-height: var(--menubaricon);
-    padding: 0;
+    margin:.7em;
 }
 
+/*disneyland logo positioneren en schalen*/
 
-/*disneyland logo schalen*/
+nav ul:first-of-type li:first-of-type {
+    position: absolute;
 
-nav>ul:first-of-type>li:nth-of-type(2)>a>img {
-    max-height: var(--menubarheight);
+    left:50vw;
+    transform: translateX(-50%);
 }
 
-
-/*searchicon schalen*/
-
-nav>ul:first-of-type>li:nth-of-type(3)>a>img {
-    max-height: var(--menubaricon);
+nav ul:first-of-type li:first-of-type a img {
+    height: var(--menulogo);
 }
 
-/*uitschuifbare menubar***************/
+/*searchicon positioneren en schalen*/
 
-/*menu button*/
-nav>ul:first-of-type>li:first-of-type {
-    z-index: 100;
+nav ul:first-of-type li:nth-of-type(2) {
+    position: absolute;
+
+    right:0;
+    margin:1.2em;
 }
 
-nav>ul:nth-of-type(2) {
+nav ul:first-of-type li:nth-of-type(2) a img {
+    height: 1.5em;
+}
+
+/*uitschuifbare menubar styling***************/
+
+nav ul:last-of-type{
+    display: flex;
+    flex-direction: column;
     position: fixed;
+
     background-color: var(--whitecolor);
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
 
-    transform: translateY(-100%);
-    transition: .3s smooth;
+    padding-top: calc(var(--menubarheight) + 1em);
+    padding-left: var(--sectionpadding);
 
-    z-index: 50;
+    transform: translateY(-100%);
+    transition: .5s ;
+
+    z-index: 100;
 }
 
-nav.toonMenu ul:nth-of-type(2){
+/*menu styling */
+
+nav ul:last-of-type li a{
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+nav ul:last-of-type li:nth-of-type(2) a,
+nav ul:last-of-type li:nth-of-type(3) a{  
+    font-size: var(--knopfontsize);
+}
+
+/*eerste img */
+nav ul:last-of-type li:first-of-type img{
+    height: var(--menuiconheight);
+    border: 4px solid white;
+    border-radius: 2em;
+    box-shadow: 2px 2px 4px rgb(212, 212, 212), -2px -2px 4px rgb(212, 212, 212);
+}
+
+/*tweede en derde witte knop met img */
+nav ul:last-of-type li:nth-of-type(2),
+nav ul:last-of-type li:nth-of-type(3){
+    border: 4px solid white;
+    border-radius: 2em;
+    box-shadow: 2px 2px 4px rgb(212, 212, 212), -2px -2px 4px rgb(212, 212, 212);
+    width:fit-content;
+}    
+
+nav ul:last-of-type li:nth-of-type(2) {
+    position: absolute;
+    left:5.5em;
+
+    background-image: url("images/inlog.png");
+    background-repeat:no-repeat;
+    background-size:var(--menuiconheight);
+
+    height: var(--menuiconheight);
+    padding-left: 2em;
+    padding-right: .5em;
+}
+
+nav ul:last-of-type li:nth-of-type(3) {
+    background-image: url("images/clock.png");
+    background-repeat:no-repeat;
+    background-size:var(--menuiconheight);
+
+    margin-top: 2.5em;
+
+    height: var(--menuiconheight);
+    padding-left: 2em;
+    padding-right: .5em;
+}
+
+/*de rest van de linkjes*/
+nav ul:last-of-type li:not(li:first-of-type, li:nth-of-type(2), li:nth-of-type(3), li:nth-of-type(9), li:nth-of-type(10), li:nth-of-type(11)){
+    margin-top: 2.5em;
+}
+
+
+nav ul:last-of-type li:nth-of-type(9),
+nav ul:last-of-type li:nth-of-type(10),
+nav ul:last-of-type li:nth-of-type(11){
+    position: absolute;
+
+    color:grey;
+    bottom:0;
+
+    font-size: var(--knopfontsize);
+}
+
+
+nav ul:last-of-type li:nth-of-type(9){
+    margin-bottom: 5rem;
+}
+
+nav ul:last-of-type li:nth-of-type(10){
+    color:black;
+
+    margin-bottom: 3.5rem;
+    font-size: .7em;
+}
+
+
+nav ul:last-of-type li:nth-of-type(11){
+    background-image: url("images/helpcenter.png");
+    background-repeat:no-repeat;
+    background-size:var(--menuiconheight);
+
+    right: 2.5em;
+    margin-bottom: 5rem;
+    padding-left: 1.5em;
+}
+
+nav ul:last-of-type li:nth-of-type(11) a{
+    color:grey;
+}
+
+
+/*de toonmenu actie*/
+
+nav.toonMenu ul:last-of-type{
     transform: translateY(0%);
+    position: fixed;
+    
+}
+
+nav.toonMenu button,
+nav.toonMenu ul:first-of-type{
+    position: fixed;
 }
 
 
 /*eerste section met quote****************************************************/
-span:first-of-type {
+/*span - laat je dromen weer uitkomen*/
+main>section span:first-of-type {
+    position: absolute;
     color: var(--whitecolor);
-    font-size: 25px;
-    font-weight: bold;
+
     width: 100%;
     left: 50%;
     top: 50%;
+
+    font-size: 25px;
+    font-weight: bold;
     text-align: center;
-    position: absolute;
+
     transform: translate(-50%, -50%);
 }
 
-section:first-of-type {
-    background-color: var(--sectioncolor2);
+main>section:first-of-type {
     display: flex;
     position: relative;
+
+    background-color: var(--sectioncolor2);
+    
     overflow: hidden;
 }
 
-section:first-of-type>a>img {
-    left: -25%;
-    width: 150%;
-    max-height: var(--imgheight);
-    border-bottom-left-radius: 50em;
-    border-bottom-right-radius: 50em;
+main>section:first-of-type>a>img {
     position: relative;
-    filter: brightness(50%);
+
+    left: -100%;
+    width: 300%;
+
+    border-bottom-left-radius: 100em;
+    border-bottom-right-radius: 100em;
+    
+    filter: brightness(60%);
 }
 
-
-/*boeking home pagina**********************************************************/
+/*boeking home pagina*********************************************************************************************/
 
 /*de booking styling algemeen*/
 
-section:nth-of-type(2) {
+main>section:nth-of-type(2) {
     background-color: var(--sectioncolor2);
 }
 
-section:nth-of-type(2) div:first-of-type form {
+/*de eerste section de boeking*/
+
+main>section:nth-of-type(2) div:first-of-type form {
     width: var(--bookingwidth);
 }
 
-section:nth-of-type(2) div:first-of-type form label {
+main>section:nth-of-type(2) div:first-of-type form label {
     padding-right: var(--bookingpaddingright);
 }
 
-section:nth-of-type(2) div:first-of-type {
-
+main>section:nth-of-type(2) div:first-of-type {
     display: flex;
-    position: absolute;
+    position: relative;
 
     background-color: var(--sectioncolor1);
     color: rgb(3, 8, 36);
 
-    left: 50%;
-    transform: translateX(-50%);
-    top: calc(var(--imgheight) - 10%);
+    top:-5em;
     width: var(--sectionwidth1);
 
     margin-left: auto;
@@ -223,20 +366,20 @@ section:nth-of-type(2) div:first-of-type {
 hoe groter de scherm het witte achtergrond gaat altijd mee 
 maar de content moet een bepaald width zijn hoe breed het ook word*/
 
-section:nth-of-type(2) div:first-of-type form input[type=date] {
+main>section:nth-of-type(2) div:first-of-type form input[type=date] {
     padding: var(--bookingpadding);
     margin-top: var(--bookingmargintop);
     margin-bottom: var(--bookingmarginbottom);
 }
 
-section:nth-of-type(2) div:first-of-type form input[type=date]:first-of-type {
+main>section:nth-of-type(2) div:first-of-type form input[type=date]:first-of-type {
     margin-right: -8px;
     width: calc(var(--bookingwidthcalc) / 2);
     border-bottom-left-radius: var(--bookingdateborder);
     border-top-left-radius: var(--bookingdateborder);
 }
 
-section:nth-of-type(2) div:first-of-type form input[type=date]:nth-of-type(2) {
+main>section:nth-of-type(2) div:first-of-type form input[type=date]:nth-of-type(2) {
     margin-left: 0;
     width: calc(var(--bookingwidthcalc) / 2);
     border-bottom-right-radius: var(--bookingdateborder);
@@ -244,7 +387,7 @@ section:nth-of-type(2) div:first-of-type form input[type=date]:nth-of-type(2) {
 }
 
 /*hotels en resorts*/
-section:nth-of-type(2) div:first-of-type form select:first-of-type {
+main>section:nth-of-type(2) div:first-of-type form select:first-of-type {
     padding: var(--bookingpadding);
     margin-top: var(--bookingmargintop);
     margin-bottom: var(--bookingmarginbottom);
@@ -253,7 +396,7 @@ section:nth-of-type(2) div:first-of-type form select:first-of-type {
 }
 
 /*kamers en gasten*/
-section:nth-of-type(2) div:first-of-type form select:nth-of-type(2) {
+main>section:nth-of-type(2) div:first-of-type form select:nth-of-type(2) {
     padding: var(--bookingpadding);
     margin-top: var(--bookingmargintop);
     margin-bottom: var(--bookingmarginbottom);
@@ -261,7 +404,7 @@ section:nth-of-type(2) div:first-of-type form select:nth-of-type(2) {
 }
 
 /*vind prijzen*/
-section:nth-of-type(2) div:first-of-type form input[type=submit] {
+main>section:nth-of-type(2) div:first-of-type form input[type=submit] {
     padding: var(--bookingpadding);
     margin-top: var(--bookingmargintop);
     margin-bottom: var(--bookingmarginbottom);
@@ -276,7 +419,7 @@ section:nth-of-type(2) div:first-of-type form input[type=submit] {
 }
 
 /*onder tekst*/
-section:nth-of-type(2) div:first-of-type form legend {
+main>section:nth-of-type(2) div:first-of-type form legend {
     margin-top: var(--bookingmargintop);
     text-align: center;
     font-weight: normal;
@@ -286,7 +429,7 @@ section:nth-of-type(2) div:first-of-type form legend {
 
 
 /*knop styling voor de sections*/
-section:not(section:first-of-type)>a {
+main>section:not(section:first-of-type)>a{
     color: var(--huiskleurblauw);
     background-color: var(--whitecolor);
 
@@ -305,56 +448,119 @@ section:not(section:first-of-type)>a {
 }
 
 /*styling voor images*/
-section>img {
+main>section>img {
     width: var(--sectionwidth2);
     border-radius: var(--imgradius);
 }
 
 /*section van img1 - img7 padding dat zorgt voor de witruimte*/
-section:nth-of-type(3),
-section:nth-of-type(5),
-section:nth-of-type(6),
-section:nth-of-type(7),
-section:nth-of-type(10),
-section:nth-of-type(11),
-section:nth-of-type(12) {
+main>section:nth-of-type(3),
+main>section:nth-of-type(5),
+main>section:nth-of-type(6),
+main>section:nth-of-type(7),
+main>section:nth-of-type(10),
+main>section:nth-of-type(11),
+main>section:nth-of-type(12) {
     padding: var(--sectionpadding);
 }
 
-/*sectie 3 - img1 - boek vroeg en profiteer van onze laagste prijzen*/
-section:nth-of-type(3) {
-    background-color: var(--sectioncolor2);
-    padding-top: 10em;
-
+/*section img en tekst order te verwisselen, images moeten bovenaan*/
+main>section:nth-of-type(3) img,
+main>section:nth-of-type(5) img,
+main>section:nth-of-type(6) img,
+main>section:nth-of-type(7) img,
+main>section:nth-of-type(10) img,
+main>section:nth-of-type(11) img,
+main>section:nth-of-type(12) img{
+    order:-1;
 }
 
-/*sectie 4 - met de twee articles*/
-section:nth-of-type(4){
-    gap:2em;
+/*sectie 3 - img1 - boek vroeg en profiteer van onze laagste prijzen*/
+main>section:nth-of-type(3) {
+    background-color: var(--sectioncolor2);
+}
+
+/*sectie 4 - met de twee li's in ul*/
+
+main>section:nth-of-type(4){
     display: flex;
     flex-direction: column;
-    width: 100%;
-    list-style: none;
     padding-top: var(--sectionpadding);
-    padding-bottom: var(--sectionpadding);
 }
 
-section:nth-of-type(4) h3{
+main>section:nth-of-type(4) ul{
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--sectioncolor1);
+
+    width: 100%;
+    padding-top: var(--sectionpadding);
     padding-bottom: var(--sectionpadding);
+    
+    gap:2em;
+    list-style: none;
+}
+
+main>section:nth-of-type(4) > h3{
     text-align: center;
 }
 
-section:nth-of-type(4) article {
+main>section:nth-of-type(4) li {
+    display: flex;
+    flex-direction: column;
     align-self: center;
 
     background-color: var(--sectioncolor1);
     width: var(--sliderliwidth);
     height: var(--sliderliheight);
+    
 
     box-shadow: 5px 5px 8px rgb(206, 206, 206), -2px -2px 8px rgb(206, 206, 206);
     border-radius: var(--borderradius);
 }
 
+main>section:nth-of-type(4) ul li img {
+    border-radius: var(--borderradius);
+    width: 100%;
+    height: 12em;
+    flex-shrink: 0;
+    order:-1;
+}
+
+main>section:nth-of-type(4) ul li h3,
+main>section:nth-of-type(4) ul li p{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 1.5em;
+}
+
+main>section:nth-of-type(4)>ul>li>p,
+main>section:nth-of-type(4)>ul>li>a{
+    font-size: var(--knopfontsize);
+}
+
+main>section:nth-of-type(4) ul li a {
+    align-self: center;
+    justify-content: flex-end;
+
+    color: var(--huiskleurblauw);
+    background-color: var(--whitecolor);
+
+    padding: var(--bookingpadding);
+    padding-left: var(--sectionpadding);
+    padding-right: var(--sectionpadding);
+
+    border: var(--knopbordersize) solid var(--huiskleurblauw);
+    border-radius: var(--knopradius);
+
+    font-weight: bolder;
+    text-decoration: none;
+    text-align: center;
+
+    margin-bottom: auto;
+    margin-top: 1em;
+}
 
 /*sectie 5 - img2 - laat je dromen weer uitkomen*/
 section:nth-of-type(5) {
@@ -374,7 +580,7 @@ section:nth-of-type(7) {
 /*sectie 8 - hotel slider*/
 section:nth-of-type(8) {
     background-color: var(--sectioncolor1);
-    list-style: none;
+
     padding-top: var(--sectionpadding);
     padding-bottom: var(--sectionpadding);
 }
@@ -386,7 +592,8 @@ section:nth-of-type(8) h3 {
 section:nth-of-type(8) ul:first-of-type {
     display: flex;
     flex-direction: row;
-    overflow: auto;
+    overflow: hidden;
+    cursor: grab;
 
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
@@ -402,14 +609,8 @@ section:nth-of-type(8) ul:first-of-type li {
     height: var(--sliderliheight);
 
     box-shadow: 5px 5px 8px rgb(206, 206, 206), -2px -2px 8px rgb(206, 206, 206);
-    scroll-snap-align: center;
     border-radius: var(--borderradius);
-    
-}
-
-section:nth-of-type(8) ul:first-of-type li img {
-    /* transform: translateY(-55%); */
-    order:1;
+    scroll-snap-align: center;
 }
 
 section:nth-of-type(8) ul:first-of-type li h4,
@@ -417,10 +618,6 @@ section:nth-of-type(8) ul:first-of-type li p {
     order:2;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-}
-
-section:nth-of-type(8) ul:first-of-type li h4,
-section:nth-of-type(8) ul:first-of-type li p {
     padding-top: 1.5em;
 }
 
@@ -429,7 +626,15 @@ section:nth-of-type(8) ul:first-of-type li a {
     font-size: var(--knopfontsize);
 }
 
-section:nth-of-type(8)>ul:first-of-type>li>a {
+section:nth-of-type(8) ul:first-of-type li img {
+    border-radius: var(--borderradius);
+    width: var(--sliderliwidth);
+    height: 12em;
+    flex-shrink: 0;
+    order:1;
+}
+
+section:nth-of-type(8) ul:first-of-type li a {
     align-self: center;
     justify-content: flex-end;
 
@@ -438,11 +643,11 @@ section:nth-of-type(8)>ul:first-of-type>li>a {
     color: var(--huiskleurblauw);
     background-color: var(--whitecolor);
 
-
-
     padding: var(--bookingpadding);
     padding-left: var(--sectionpadding);
     padding-right: var(--sectionpadding);
+    margin-bottom: 3em;
+    margin-top: auto;
 
     border: var(--knopbordersize) solid var(--huiskleurblauw);
     border-radius: var(--knopradius);
@@ -452,12 +657,6 @@ section:nth-of-type(8)>ul:first-of-type>li>a {
     text-align: center;
 }
 
-section:nth-of-type(8) ul:first-of-type li img {
-    border-radius: var(--borderradius);
-    width: var(--sliderimgwidth);
-    height: 12em;
-    flex-shrink: 0;
-}
 
 /*de bolletjes onder de slider*/
 section:nth-of-type(8) ul:nth-of-type(2) {
@@ -478,6 +677,8 @@ section:nth-of-type(8) ul:nth-of-type(2) li a {
     opacity: 0%;
 }
 
+
+
 /*de knop onder de slider*/
 section:nth-of-type(8) > a:last-of-type {
     margin-top:1em;
@@ -497,10 +698,24 @@ section:nth-of-type(8) > a:last-of-type {
 
 /*sectie 9 - disneytips van onze fans video*/
 section:nth-of-type(9) {
+
     background-color: var(--sectioncolor2);
-    text-align: center;
+ 
     padding:var(--sectionpadding);
+    text-align: center;
 }
+
+iframe{
+    background-color: var(--whitecolor);
+
+    margin-left: auto;
+    margin-right:auto;
+    padding: 1em;
+
+    box-shadow: 5px 5px 8px rgb(206, 206, 206), -2px -2px 8px rgb(206, 206, 206);
+    border-radius: var(--borderradius);
+}
+
 
 /*sectie 10 - img5 - blijf op de hoogte van het..*/
 section:nth-of-type(10) {
@@ -517,38 +732,248 @@ section:nth-of-type(12) {
     background-color: var(--sectioncolor1);
 }
 
-/*sectie 12 - #disneyland paris..*/
+/*sectie 13 - #disneyland paris instagram posts*/
 section:nth-of-type(13) {
     background-color: var(--sectioncolor1);
-}
 
-footer{
-    background-color: var(--sectioncolor2);
-    padding:var(--sectionpadding);
-
-}
-
-/* footer > div > h4{
-    padding: var(--sectionpadding);
-} */
-
-footer > div {
-    background-color: var(--sectioncolor1);
-    padding-left: var(--sectionpadding);
-    padding-right: var(--sectionpadding);
-    border-radius:var(--borderradius);
-}
-
-footer> div > h4{
     padding-top: var(--sectionpadding);
     padding-bottom: var(--sectionpadding);
 }
 
-footer > div > div:first-of-type{
-    background-color: aqua;
-    transform: translateY();
+section:nth-of-type(13) h3{
+    text-align: center;
+}
+
+section:nth-of-type(13) ul{
+    display: flex;
+    flex-direction: row;
+
+    overflow: hidden;
+    cursor: grab;
+
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+section:nth-of-type(13)>a{
+    color: var(--huiskleurblauw);
+    background-color: var(--whitecolor);
+
+    background-image: url(./images/insta1.png);
+    background-repeat: no-repeat;
+    background-position-x: 1em;
+    background-position-y: 50%;
+}
+
+
+/*ig posts styling*/
+section:nth-of-type(13) ul li img {
+    width:20em;
+    height:20em;
+    margin: .5em;
+    border-radius: 5px;
 }
 
 
 
+/*de footer********************************************************************/
+
+footer{
+
+    background-color: var(--sectioncolor2);
+
+    padding:var(--sectionpadding);
+
+    text-align: center;
+    font-weight: normal;
+    font-size: var(--knopfontsize);
+}
+
+footer div {
+    background-color: var(--sectioncolor1);
+
+    padding-left: var(--sectionpadding);
+    padding-right: var(--sectionpadding);
+
+    box-shadow: 5px 5px 8px rgb(206, 206, 206), -2px -2px 8px rgb(206, 206, 206);
+    border-radius: var(--borderradius);
+}
+
+footer div section{
+    /* background-image: url("/images/arrowdark.png"); */
+    display: flex;
+    flex-direction: column;
+
+    padding: 1.5em;
+}
+
+footer div section ul li{
+    margin-bottom: var(--bookingpadding);
+}
+
+/*normale linkjes styling*/
+
+footer div section ul li a {
+    text-decoration: none;
+    font-size: var(--knopfontsize);
+    margin-bottom: 60em;
+    color: black;
+}
+
+/*arrow styling*/
+
+footer div section img{
+    position: absolute;
+    height: .8em;
+    width:1.5em;
+
+    right: 10%;
+
+    /* width:var(--menuiconheight); */
+}
+
+
+/*alle states*****************************************************************/
+/*focus states*/
+a:focus, nav>ul>li:focus, span:focus, label:focus, select:focus, input:focus  {
+    outline: 2px solid rgb(96, 210, 255);
+}
+
+/*hover states*/
+
+a:hover, button:hover{
+    cursor: pointer;
+}
+
+section:nth-of-type(8) ul li a:hover {
+    background-color: green;
+}
+
+footer div section ul li a:hover {
+    text-decoration: underline;
+}
+
+/*active states*/
+
+section:nth-of-type(8) ul:nth-of-type(2) li:active {
+    background-color: var(--huiskleurblauw);
+}
+
+/*mediaqueries1 bij 60em veranderd het naar desktop*/
+
+@media (min-width:43em) {
+    main>section:nth-of-type(4) ul{
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+@media (min-width:45em) {
+    img:not(section:first-of-type>a>img){
+        max-width: 30em;
+    }
+
+    section:nth-of-type(3),
+    section:nth-of-type(5), 
+    section:nth-of-type(6),
+    section:nth-of-type(7),
+    section:nth-of-type(10),
+    section:nth-of-type(11),
+    section:nth-of-type(12){
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+    }
+
+    /*section 3 grid indeling*/
+    section:nth-of-type(3) h3,
+    section:nth-of-type(6) h3,
+    section:nth-of-type(10) h3,
+    section:nth-of-type(12) h3{
+       grid-column-start: 1;
+       grid-row-start: 1;
+    }
+
+    section:nth-of-type(3) p,
+    section:nth-of-type(3) a,
+    section:nth-of-type(6) p,
+    section:nth-of-type(6) a,
+    section:nth-of-type(10) p,
+    section:nth-of-type(10) a,
+    section:nth-of-type(12) p,
+    section:nth-of-type(12) a{
+        grid-column-start: 1;
+    }
+
+    section:nth-of-type(3) img,
+    section:nth-of-type(6) img,
+    section:nth-of-type(10) img,
+    section:nth-of-type(12) img{
+        grid-column-start: 2;
+        grid-row-start: 1;
+        grid-row-end:4;
+    }
+
+    /*section grid indeling*/
+    section:nth-of-type(5) h3,
+    section:nth-of-type(7) h3,
+    section:nth-of-type(11) h3{
+        grid-column-start: 2;
+        grid-row-start: 1;
+     }
+ 
+    section:nth-of-type(5) p,
+    section:nth-of-type(5) a,
+    section:nth-of-type(7) p,
+    section:nth-of-type(7) a,
+    section:nth-of-type(11) p,
+    section:nth-of-type(11) a{
+        grid-column-start: 2;
+     }
+ 
+    section:nth-of-type(5) img,
+    section:nth-of-type(7) img,
+    section:nth-of-type(11) img{
+        grid-column-start: 1;
+        grid-row-start: 1;
+        grid-row-end:4;
+     }
+}
+
+@media (min-width:64em) {
+
+    /*styling voor booking*/
+    main>section:first-of-type>a>img {
+        left: -30%;
+        width: 160%;
+    }
+
+    /*boeking styling row style ipv column*/
+    main>section:nth-of-type(2) div:first-of-type {
+        width: 85em;
+    }
+
+    main>section:nth-of-type(2) div:first-of-type form{
+        display: flex;
+        flex-direction: row;
+        padding:5px;
+        width: fit-content;
+    }
+
+    main>section:nth-of-type(2) div:first-of-type form label {
+        padding-right:0;
+    }
+
+    /* main>section:nth-of-type(2) div:first-of-type form legend {
+        flex-wrap: wrap;
+    } */
+}
+
+@media (min-width:90em) {
+    main>section:first-of-type>a>img {
+        top:-20%;
+        left: -10%;
+        width: 120%;
+        height: 60%;
+    }
+}
 

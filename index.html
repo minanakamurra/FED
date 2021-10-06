@@ -12,10 +12,11 @@
 <body>
     <header>
         <nav>
+            <button>
+                <img src="./images/hamburgerimage.png" alt="hamburger menu image">Menu
+            </button>
+
             <ul>
-                <li>
-                    <img src="./images/hamburgerimage.png" alt="hamburger menu image">Menu
-                </li>
                 <li>
                     <a href="#"><img src="./images/logo.png" alt="disneyland paris logo"></a>
                 </li>
@@ -26,28 +27,28 @@
 
             <ul>
                 <li>
-                    <img>
+                    <a href="#"><img src="./images/nlvlag.png"></a>
                 </li>
                 <li>
-                    <a href=#>Inloggen</a>
+                    <a href="#">Inloggen</a>
                 </li>
                 <li>
-                    <a href=#>Parktijden</a>
+                    <a href="#">Parktijden</a>
                 </li>
                 <li>
-                    <a href=#>DE 2 PARKEN</a>
+                    <a href="#">DE 2 PARKEN <img src="./images/arrowblue.png"></a>
                 </li>
                 <li>
-                    <a href=#> HOTELS & RESORTS</a>
+                    <a href="#"> HOTELS & RESORTS<img src="./images/arrowblue.png"></a>
                 </li>
                 <li>
-                    <a href=#>RESTAURANTS</a>
+                    <a href="#">RESTAURANTS<img src="./images/arrowblue.png"></a>
                 </li>
                 <li>
-                    <a href=#>TIKCETS EN VERBLIJVEN</a>
+                    <a href="#">TIKCETS EN VERBLIJVEN<img src="./images/arrowblue.png"></a>
                 </li>
                 <li>
-                    <a href=#>BEREID JE BEZOEK VOOR</a>
+                    <a href="#">BEREID JE BEZOEK VOOR<img src="./images/arrowblue.png"></a>
                 </li>
                 <li>
                     Bel onze vakantie-experts
@@ -56,9 +57,7 @@
                     €1.00 per gesprek
                 </li>
                 <li>
-                    <a href=#>
-                        0900 34 76 39 65
-                    </a>
+                    <a href="#"> 0900 34 76 39 65</a>
                 </li>
             </ul>
         </nav>
@@ -68,7 +67,7 @@
     <main>
         <section>
             <a href="#">
-                <img src="./images/disneyland-pic.jpg" alt="disneyland parijs kasteel">
+                <img src="./images/pageimage.jpg" alt="disneyland parijs kasteel">
                 <span>
                     Laat je dromen weer uitkomen
                 </span>
@@ -77,14 +76,14 @@
 
         <section>
             <div>
-                <form action="reservatie" method="">
+                <form action="reservatie">
                     <label for="datum">Kies je data</label>
                     <input type="date" name="datum" id="vertrekdatum" required>
                     <input type="date" name="datum" id="aankomstdatum" required>
                     <label for="verblijf">Hotels & Resorts</label>
                     <select name="Hotels & Resorts" id="hotel-select">
-                        <option value="">Alle Hotels</option>
-                        <option value="hotel1">Disney's Hotel New York - The Art of Marvel</option>
+                        <option value="opties">Alle Hotels</option>
+                        <option value="hotel1">Disney's Hotel New York - The Art of Marvel ★★★★</option>
                         <option value="hotel2">Disney's Newport Bay Club</option>
                         <option value="hotel3">Disney's Sequoia Lodge</option>
                         <option value="hotel4">Disney's Cheyenne</option>
@@ -116,21 +115,25 @@
 
         <section>
             <h3>Halloween en kerst komen terug naar Disneyland Paris!</h3>
-            <article>
-                <img>
-                <h3>Disney's Halloween Festival </h3>
-                <p>Van 1 oktober t/m 7 november 2021 vieren we Disney's Halloween Festival. De Disney Schurken zijn dol
-                    op het halloweenfeest en liggen al op de loer om je verschrikkeleuk te vermaken.</p>
-                <a href="#">Meer info</a>
-            </article>
+            <ul>
+                <li>
+                    <h3>Disney's Halloween Festival </h3>
+                    <img src="./images/imageslider1.jpg" alt="">
+                    <p>Van 1 oktober t/m 7 november 2021 vieren we Disney's Halloween Festival. De Disney Schurken zijn
+                        dol
+                        op het halloweenfeest en liggen al op de loer om je verschrikkeleuk te vermaken.</p>
+                    <a href="#">Meer info</a>
+                </li>
 
-            <article>
-                <img>
-                <h3>Disney's betroverende kerst</h3>
-                <p>Van 13 november 2021 t/m 9 januari 2022 wachten je favoriete Disney Figuren je op in hun mooiste
-                    kerstoutfits met een arrenslee vol betoverende momenten.</p>
-                <a>Meer info</a>
-            </article>
+                <li>
+                    <h3>Disney's betroverende kerst</h3>
+                    <img src="./images/imageslider2.jpg" alt="">
+                    <p>Van 13 november 2021 t/m 9 januari 2022 wachten je favoriete Disney Figuren je op in hun
+                        mooiste
+                        kerstoutfits met een arrenslee vol betoverende momenten.</p>
+                    <a href="#">Meer info</a>
+                </li>
+            </ul>
         </section>
 
         <section>
@@ -141,7 +144,6 @@
                 attractie wandelt. Voor nog meer magie ben je welkom in onze hotels, themarestaurants en boetieks.</p>
             <a href="#">Ontdek de magie</a>
         </section>
-
 
         <section>
             <h3>Boek je verblijf met gemoedsrust</h3>
@@ -168,25 +170,25 @@
                     <h4>Disney's Hotel New York - The Art of Marvel</h4>
                     <img src="./images/hotel1.jpg" alt="Afbeelding van Dinsey's Hotel New York The art of Marvel">
                     <p>Leef als een Superheld en geniet van de eigentijdse en artistieke sfeer van New York.</p>
-                    <a href="#">Meer info</a>
+                    <a href="#/">Meer info</a>
                 </li>
                 <li id="hotel2">
                     <h4>Disney's Newport Bay Club</h4>
                     <img src="./images/hotel2.jpg" alt="Disney's Newport Bay Club">
                     <p>Ontwaak in een luxueus kusthotel met de magische sfeer van Mickey's maritieme avonturen.</p>
-                    <a href="#">Meer info</a>
+                    <a href="#/">Meer info</a>
                 </li>
                 <li id="hotel3">
                     <h4>Disney's Davy Crockett Ranch</h4>
                     <img src="./images/hotel3.jpg" alt="Disney's Davy Crockett Ranch">
                     <p>Geniet op je eigen ritme in een gezellige blokhut in het bos.</p>
-                    <a href="#">Meer info</a>
+                    <a href="#/">Meer info</a>
                 </li>
                 <li id="hotel4">
                     <h4>Disney's Hotel Cheyenne</h4>
                     <img src="./images/hotel4.jpg" alt="Disney's Hotel Cheyenne">
                     <p>Howdy! Ontspan in je kamer met Woody-thema midden in een levendig stadje in het Wilde Westen.</p>
-                    <a href="#">Meer info</a>
+                    <a href="#/">Meer info</a>
                 </li>
             </ul>
 
@@ -202,7 +204,9 @@
 
         <section>
             <h3>#Disneytips van onze fans</h3>
-            <video></video>
+            <!-- <iframe src="https://www.youtube.com/embed/bJ_xn5ZcsHI" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe> -->
             <p>Waar moet je blijven slapen? Wat is de beste Selfie Spot? En hoe werkt de Disneyland Paris app? Onze
                 Disneyland
                 Paris fans vertellen het je in #DisneyTips!</p>
@@ -214,7 +218,7 @@
             <p>Schrijf je in voor onze nieuwsbrief en ontvang speciale aanbiedingen en updates over Disneyland Paris en
                 andere
                 producten en diensten van The Walt Disney Family of Companies.</p>
-            <a>Schrijf je in</a>
+            <a href="#">Schrijf je in</a>
         </section>
 
         <section>
@@ -224,7 +228,7 @@
                 kleintjes. Plan hun droomdag en bekijk onze services voor ouders in onze Parken, restaurants en Disney
                 Hotels!
             </p>
-            <a>Meer info</a>
+            <a href="#">Meer info</a>
         </section>
 
         <section>
@@ -233,41 +237,95 @@
             <p>Sla de reguliere wachtrij over bij enkele van onze meest populaire attracties dankzij de nieuwe, snelle
                 rij van
                 Disney Premier Access: vanaf €8 tot €15 per persoon, per attractie. Beperkt beschikbaar.</p>
-            <a>Meer informatie</a>
+            <a href="#">Meer informatie</a>
         </section>
 
         <section>
             <h3>#DisneylandParis</h3>
+            <ul>
+                <li><img src="./images/igpost1.png" alt="instagram post van een cupcake"></li>
+                <li><a href=""><img src="./images/igpost2.png" alt="instagram post van een attractie"></a></li>
+                <li><a href=""><img src="./images/igpost3.png" alt="instagram post van een luchtballon"></a></li>
+                <li><a href=""><img src="./images/igpost4.png" alt="instagram post van een dessert"></a></li>
+                <li><a href=""><img src="./images/igpost5.png" alt="instagram post van Jack Sparrow "></a></li>
+            </ul>
+            <a href="https://www.instagram.com/disneylandparis/">Volg ons</a>
         </section>
 
         <footer>
             <div>
-                <h4>JURIDISCHE INFORMATIE</h4>
-                <div>
-                    <a>Verkoopvoorwaarden en verzekering Allianz Travel</a>
-                    <a>Privacybeleid</a>
-                    <a>Disney Hotels en Resort reglement</a>
-                </div>
+                <section>
+                    <h4>JURIDISCHE INFORMATIE</h4>
+                    <img src="./images/arrowdark.png" alt="pijl">
 
-                <h4>HELP</h4>
-                <div>    
-                    <a>Wettelijke gegevens</a>
-                    <a>Europese Privacy Regelgeving</a>
-                    <a>Animal care center reglement</a>
-                </div>
+                    <ul>
+                        <li><a href="#">Verkoopvoorwaarden en verzekering Allianz Travel</a></li>
+                        <li><a href="#">Wettelijke gegevens</a></li>
+                        <li><a href="#">Juridische infomratie en voorwaaden website</a></li>
+                        <li><a href="#">Cookiesbeleid</a></li>
+                        <li><a href="#">Privacybeleid</a></li>
+                        <li><a href="#">Europese Privacy Regelgeving</a></li>
+                        <li><a href="#">Disney Parken reglement</a></li>
+                        <li><a href="#">Disney Village reglement</a></li>
+                        <li><a href="#">Disney Hotels en Resort reglement</a></li>
+                        <li><a href="#">Animal care center reglement</a></li>
+                        <li><a href="#">Parkeerplaats voor bezoekers reglement</a></li>
+                    </ul>
+                </section>
 
-                <h4>MEER DISNEYLAND PARIS</h4>
-                <div>
-                    <a>Juridische infomratie en voorwaaden website</a>
-                    <a>Disney Parken reglement</a>
-                    <a>Parkeerplaats voor bezoekers reglement</a>
-                </div>
+                <section>
+                    <h4>HELP</h4>
+                    <img src="./images/arrowdark.png" alt="pijl">
 
-                <h4>GERELATEERDE DISNEY SITES</h4>
-                <div>
-                    <a>Cookiesbeleid</a>
-                    <a>Disney Village reglement</a>
-                </div>
+                    <ul>
+                        <li><a href="#">Brochure en Prijstabellen</a></li>
+                        <li><a href="#">Helpdesk</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Websitehulp</a></li>
+                        <li><a href="#">Groepsreizen</a></li>
+                        <li><a href="#">Services in de Parken</a></li>
+                        <li><a href="#">Gasten met beperkingen</a></li>
+                        <li><a href="#">Terugroepactie</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h4>MEER DISNEYLAND PARIS</h4>
+                    <img src="./images/arrowdark.png" alt="pijl">
+
+                    <ul>
+                        <li><a href="#">Mobiele app</a></li>
+                        <li><a href="#">DAffiliates</a></li>
+                        <li><a href="#">Partners</a></li>
+                        <li> <a href="#">Pers</a></li>
+                        <li><a href="#">Bedrijfsinformatie</a></li>
+                        <li> <a href="#">Jobs</a></li>
+                        <li> <a href="#">Meld je aan en word lid van de Disney familie!</a></li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h4>GERELATEERDE DISNEY SITES</h4>
+                    <img src="./images/arrowdark.png" alt="pijl">
+
+                    <ul>
+                        <li><a href="#">Disney.com</a></li>
+                        <li><a href="#">shopDisney</a></li>
+                        <li><a href="#">Disney Cruise Line</a></li>
+                        <li><a href="#">Disney Parken</a></li>
+                        <li><a href="#">Disneyland Paris Generations</a></li>
+                        <li><a href="#">Conventiecentrum</a></li>
+                        <li><a href="#">Disney Parken Blog</a></li>
+                    </ul>
+                </section>
+
+                <section>
+                    <ul>
+                        <li><a href="#">Cookiesbeleid</a></li>
+                        <li><a href="#">Disney Village reglement</a></li>
+                    </ul>
+                </section>
             </div>
         </footer>
 
