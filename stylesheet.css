@@ -14,7 +14,7 @@
     --bordershadowx: 5px;
     --bordershadowy: 5px;
 
-    --menubarheight: 4em;
+    --menubarheight: 3.5em;
     --menubaricon: 1em;
     --menulogo: 2.5em;
 
@@ -88,7 +88,7 @@ nav>ul:first-of-type>li {
 
 /*om menu en hamburger icon onderelkaar te zetten*/
 
-nav{
+nav {
     display: flex;
 }
 
@@ -103,12 +103,12 @@ nav button {
     margin-left: .8em;
 }
 
-nav ul:first-of-type{
+nav ul:first-of-type {
     background-color: var(--whitecolor);
 
-    left:0;
-    right:0;
-    width:100%;
+    left: 0;
+    right: 0;
+    width: 100%;
     height: var(--menubarheight);
 
     z-index: 150;
@@ -119,38 +119,38 @@ nav ul:first-of-type{
 nav button img {
     display: flex;
     max-height: var(--menubaricon);
-    margin:.7em;
+    margin: .7em;
 }
 
 /*disneyland logo positioneren en schalen*/
 
-nav ul:first-of-type li:first-of-type {
+nav>ul:first-of-type>li:first-of-type {
     position: absolute;
 
-    left:50vw;
+    left: 50vw;
     transform: translateX(-50%);
 }
 
-nav ul:first-of-type li:first-of-type a img {
+nav>ul:first-of-type>li:first-of-type a img {
     height: var(--menulogo);
 }
 
 /*searchicon positioneren en schalen*/
 
-nav ul:first-of-type li:nth-of-type(2) {
+nav>ul:first-of-type>li:nth-of-type(2) {
     position: absolute;
 
-    right:0;
-    margin:1.2em;
+    right: 0;
+    margin: 1.2em;
 }
 
-nav ul:first-of-type li:nth-of-type(2) a img {
+nav>ul:first-of-type>li:nth-of-type(2) a img {
     height: 1.5em;
 }
 
 /*uitschuifbare menubar styling***************/
 
-nav ul:last-of-type{
+nav>ul:last-of-type {
     display: flex;
     flex-direction: column;
     position: fixed;
@@ -165,25 +165,25 @@ nav ul:last-of-type{
     padding-left: var(--sectionpadding);
 
     transform: translateY(-100%);
-    transition: .5s ;
+    transition: .5s;
 
     z-index: 100;
 }
 
 /*menu styling */
 
-nav ul:last-of-type li a{
+nav ul:last-of-type li a {
     text-decoration: none;
     font-weight: bolder;
 }
 
 nav ul:last-of-type li:nth-of-type(2) a,
-nav ul:last-of-type li:nth-of-type(3) a{  
+nav ul:last-of-type li:nth-of-type(3) a {
     font-size: var(--knopfontsize);
 }
 
 /*eerste img */
-nav ul:last-of-type li:first-of-type img{
+nav>ul:last-of-type li:first-of-type img {
     height: var(--menuiconheight);
     border: 4px solid white;
     border-radius: 2em;
@@ -191,31 +191,31 @@ nav ul:last-of-type li:first-of-type img{
 }
 
 /*tweede en derde witte knop met img */
-nav ul:last-of-type li:nth-of-type(2),
-nav ul:last-of-type li:nth-of-type(3){
+nav>ul:last-of-type>li:nth-of-type(2),
+nav>ul:last-of-type>li:nth-of-type(3) {
     border: 4px solid white;
     border-radius: 2em;
     box-shadow: 2px 2px 4px rgb(212, 212, 212), -2px -2px 4px rgb(212, 212, 212);
-    width:fit-content;
-}    
+    width: fit-content;
+}
 
-nav ul:last-of-type li:nth-of-type(2) {
+nav>ul:last-of-type>li:nth-of-type(2) {
     position: absolute;
-    left:5.5em;
+    left: 5.5em;
 
     background-image: url("images/inlog.png");
-    background-repeat:no-repeat;
-    background-size:var(--menuiconheight);
+    background-repeat: no-repeat;
+    background-size: var(--menuiconheight);
 
     height: var(--menuiconheight);
     padding-left: 2em;
     padding-right: .5em;
 }
 
-nav ul:last-of-type li:nth-of-type(3) {
+nav>ul:last-of-type>li:nth-of-type(3) {
     background-image: url("images/clock.png");
-    background-repeat:no-repeat;
-    background-size:var(--menuiconheight);
+    background-repeat: no-repeat;
+    background-size: var(--menuiconheight);
 
     margin-top: 2.5em;
 
@@ -225,61 +225,67 @@ nav ul:last-of-type li:nth-of-type(3) {
 }
 
 /*de rest van de linkjes*/
-nav ul:last-of-type li:not(li:first-of-type, li:nth-of-type(2), li:nth-of-type(3), li:nth-of-type(9), li:nth-of-type(10), li:nth-of-type(11)){
+nav>ul:last-of-type li:not(li:first-of-type, li:nth-of-type(2), li:nth-of-type(3), li:nth-of-type(9), li:nth-of-type(10), li:nth-of-type(11)) {
     margin-top: 2.5em;
 }
 
 
 nav ul:last-of-type li:nth-of-type(9),
 nav ul:last-of-type li:nth-of-type(10),
-nav ul:last-of-type li:nth-of-type(11){
+nav ul:last-of-type li:nth-of-type(11) {
     position: absolute;
 
-    color:grey;
-    bottom:0;
+    color: grey;
+    bottom: 0;
 
     font-size: var(--knopfontsize);
 }
 
 
-nav ul:last-of-type li:nth-of-type(9){
+nav ul:last-of-type li:nth-of-type(9) {
     margin-bottom: 5rem;
 }
 
-nav ul:last-of-type li:nth-of-type(10){
-    color:black;
+nav ul:last-of-type li:nth-of-type(10) {
+    color: black;
 
     margin-bottom: 3.5rem;
     font-size: .7em;
 }
 
 
-nav ul:last-of-type li:nth-of-type(11){
+nav ul:last-of-type li:nth-of-type(11) {
     background-image: url("images/helpcenter.png");
-    background-repeat:no-repeat;
-    background-size:var(--menuiconheight);
+    background-repeat: no-repeat;
+    background-size: var(--menuiconheight);
 
     right: 2.5em;
     margin-bottom: 5rem;
     padding-left: 1.5em;
 }
 
-nav ul:last-of-type li:nth-of-type(11) a{
-    color:grey;
+nav ul:last-of-type li:nth-of-type(11) a {
+    color: grey;
 }
 
 
 /*de toonmenu actie*/
 
-nav.toonMenu ul:last-of-type{
+nav.toonMenu ul:last-of-type {
     transform: translateY(0%);
     position: fixed;
-    
 }
 
 nav.toonMenu button,
-nav.toonMenu ul:first-of-type{
+nav.toonMenu ul:first-of-type {
+    /* overscroll-behavior: none; */
     position: fixed;
+
+}
+
+/*de menu iconen voor desktop verbergen*/
+nav>div:last-of-type {
+    display: none;
 }
 
 
@@ -301,24 +307,27 @@ main>section span:first-of-type {
 }
 
 main>section:first-of-type {
-    display: flex;
-    position: relative;
+    /* display: flex;
+    position: relative; */
 
     background-color: var(--sectioncolor2);
-    
+
     overflow: hidden;
 }
 
-main>section:first-of-type>a>img {
-    position: relative;
 
-    left: -100%;
-    width: 300%;
 
-    border-bottom-left-radius: 100em;
-    border-bottom-right-radius: 100em;
-    
-    filter: brightness(60%);
+main>section:first-of-type>a {
+    background-image: url("images/pageimage.jpg");
+    background-size: cover;
+
+    border-radius: 130em/45em;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    height: 75vh;
+    background-position: center;
+
+    filter: grayscale(20%);
 }
 
 /*boeking home pagina*********************************************************************************************/
@@ -346,7 +355,7 @@ main>section:nth-of-type(2)>div:first-of-type {
     background-color: var(--sectioncolor1);
     color: rgb(3, 8, 36);
 
-    top:-5em;
+    top: -5em;
     width: var(--sectionwidth1);
 
     margin-left: auto;
@@ -361,10 +370,50 @@ main>section:nth-of-type(2)>div:first-of-type {
     appearance: none;
 }
 
+main>section:nth-of-type(2)>div>section {
+    display: none
+}
+
 /*kies je data*/
 /*Om de content nooit groter dan de bookingwidth te laten maken, 
 hoe groter de scherm het witte achtergrond gaat altijd mee 
 maar de content moet een bepaald width zijn hoe breed het ook word*/
+
+main>section:nth-of-type(2)>div:first-of-type>div:first-of-type {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+
+    text-align: center;
+    gap: 4em;
+}
+
+main>section:nth-of-type(2)>div:first-of-type>section:first-of-type>button {
+    cursor: pointer;
+    display: none;
+}
+
+main>section:nth-of-type(2)>div:first-of-type>section:first-of-type {
+    cursor: pointer;
+    position: absolute;
+    opacity: 1;
+    background: var(--whitecolor);
+
+    margin-top: 5em;
+
+}
+
+main>section:nth-of-type(2)>div:first-of-type>section:first-of-type>div {
+    border-radius: 1.5em;
+    border-color: var(--sectioncolor2);
+    border-width: 5px;
+
+}
+
+
+main>section:nth-of-type(2)>div:first-of-type>form {
+    margin-top: 4em;
+}
 
 main>section:nth-of-type(2)>div:first-of-type>form>div>div>div>input[type=date] {
     padding: var(--bookingpadding);
@@ -425,11 +474,16 @@ main>section:nth-of-type(2) div:first-of-type form legend {
     font-weight: normal;
 }
 
-/*de rest van de sceties onder de booking**********************************************************/
+/*de rest van de secties onder de booking**********************************************************/
 
+/*voor de hover animation*/
+main>section>a,
+main>section>a>ul>li>a {
+    transition: .3s;
+}
 
 /*knop styling voor de sections*/
-main>section:not(section:first-of-type)>a{
+main>section:not(section:first-of-type)>a {
     color: var(--huiskleurblauw);
     background-color: var(--whitecolor);
 
@@ -445,6 +499,7 @@ main>section:not(section:first-of-type)>a{
     font-weight: bolder;
     text-decoration: none;
     text-align: center;
+
 }
 
 /*styling voor images*/
@@ -471,8 +526,8 @@ main>section:nth-of-type(6) img,
 main>section:nth-of-type(7) img,
 main>section:nth-of-type(10) img,
 main>section:nth-of-type(11) img,
-main>section:nth-of-type(12) img{
-    order:-1;
+main>section:nth-of-type(12) img {
+    order: -1;
 }
 
 /*sectie 3 - img1 - boek vroeg en profiteer van onze laagste prijzen*/
@@ -482,13 +537,13 @@ main>section:nth-of-type(3) {
 
 /*sectie 4 - met de twee li's in ul*/
 
-main>section:nth-of-type(4){
+main>section:nth-of-type(4) {
     display: flex;
     flex-direction: column;
     padding-top: var(--sectionpadding);
 }
 
-main>section:nth-of-type(4) ul{
+main>section:nth-of-type(4) ul {
     display: flex;
     flex-direction: column;
 
@@ -497,12 +552,12 @@ main>section:nth-of-type(4) ul{
     width: 100%;
     padding-top: var(--sectionpadding);
     padding-bottom: var(--sectionpadding);
-    
-    gap:2em;
+
+    gap: 2em;
     list-style: none;
 }
 
-main>section:nth-of-type(4) > h3{
+main>section:nth-of-type(4)>h3 {
     text-align: center;
 }
 
@@ -514,7 +569,7 @@ main>section:nth-of-type(4) li {
     background-color: var(--sectioncolor1);
     width: var(--sliderliwidth);
     height: var(--sliderliheight);
-    
+
 
     box-shadow: 5px 5px 8px rgb(206, 206, 206), -2px -2px 8px rgb(206, 206, 206);
     border-radius: var(--borderradius);
@@ -525,18 +580,18 @@ main>section:nth-of-type(4) ul li img {
     width: 100%;
     height: 12em;
     flex-shrink: 0;
-    order:-1;
+    order: -1;
 }
 
 main>section:nth-of-type(4) ul li h3,
-main>section:nth-of-type(4) ul li p{
+main>section:nth-of-type(4) ul li p {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     padding-top: 1.5em;
 }
 
 main>section:nth-of-type(4)>ul>li>p,
-main>section:nth-of-type(4)>ul>li>a{
+main>section:nth-of-type(4)>ul>li>a {
     font-size: var(--knopfontsize);
 }
 
@@ -600,7 +655,7 @@ section:nth-of-type(8) ul:first-of-type {
 }
 
 section:nth-of-type(8) ul:first-of-type li {
-    display:flex;
+    display: flex;
     flex-direction: column;
 
     background-color: var(--sectioncolor1);
@@ -615,7 +670,7 @@ section:nth-of-type(8) ul:first-of-type li {
 
 section:nth-of-type(8) ul:first-of-type li h4,
 section:nth-of-type(8) ul:first-of-type li p {
-    order:2;
+    order: 2;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     padding-top: 1.5em;
@@ -631,7 +686,7 @@ section:nth-of-type(8) ul:first-of-type li img {
     width: var(--sliderliwidth);
     height: 12em;
     flex-shrink: 0;
-    order:1;
+    order: 1;
 }
 
 section:nth-of-type(8) ul:first-of-type li a {
@@ -680,8 +735,8 @@ section:nth-of-type(8) ul:nth-of-type(2) li a {
 
 
 /*de knop onder de slider*/
-section:nth-of-type(8) > a:last-of-type {
-    margin-top:1em;
+section:nth-of-type(8)>a:last-of-type {
+    margin-top: 1em;
 
     padding: 1em;
     padding-left: var(--sectionpadding);
@@ -700,16 +755,16 @@ section:nth-of-type(8) > a:last-of-type {
 section:nth-of-type(9) {
 
     background-color: var(--sectioncolor2);
- 
-    padding:var(--sectionpadding);
+
+    padding: var(--sectionpadding);
     text-align: center;
 }
 
-iframe{
+iframe {
     background-color: var(--whitecolor);
 
     margin-left: auto;
-    margin-right:auto;
+    margin-right: auto;
     padding: 1em;
 
     box-shadow: 5px 5px 8px rgb(206, 206, 206), -2px -2px 8px rgb(206, 206, 206);
@@ -740,22 +795,22 @@ section:nth-of-type(13) {
     padding-bottom: var(--sectionpadding);
 }
 
-section:nth-of-type(13) h3{
+section:nth-of-type(13) h3 {
     text-align: center;
 }
 
-section:nth-of-type(13) ul{
+section:nth-of-type(13) ul {
     display: flex;
     flex-direction: row;
 
-    overflow: hidden;
+    overflow: scroll;
     cursor: grab;
 
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
 }
 
-section:nth-of-type(13)>a{
+section:nth-of-type(13)>a {
     color: var(--huiskleurblauw);
     background-color: var(--whitecolor);
 
@@ -768,8 +823,8 @@ section:nth-of-type(13)>a{
 
 /*ig posts styling*/
 section:nth-of-type(13) ul li img {
-    width:20em;
-    height:20em;
+    width: 20em;
+    height: 20em;
     margin: .5em;
     border-radius: 5px;
 }
@@ -778,11 +833,11 @@ section:nth-of-type(13) ul li img {
 
 /*de footer********************************************************************/
 
-footer{
+footer {
 
     background-color: var(--sectioncolor2);
 
-    padding:var(--sectionpadding);
+    padding: var(--sectionpadding);
 
     text-align: center;
     font-weight: normal;
@@ -799,7 +854,7 @@ footer div {
     border-radius: var(--borderradius);
 }
 
-footer div section{
+footer div section {
     /* background-image: url("/images/arrowdark.png"); */
     display: flex;
     flex-direction: column;
@@ -807,7 +862,7 @@ footer div section{
     padding: 1.5em;
 }
 
-footer div section ul li{
+footer div section ul li {
     margin-bottom: var(--bookingpadding);
 }
 
@@ -822,10 +877,10 @@ footer div section ul li a {
 
 /*arrow styling*/
 
-footer div section img{
+footer div section img {
     position: absolute;
     height: .8em;
-    width:1.5em;
+    width: 1.5em;
 
     right: 10%;
 
@@ -835,18 +890,33 @@ footer div section img{
 
 /*alle states*****************************************************************/
 /*focus states*/
-a:focus, nav>ul>li:focus, span:focus, label:focus, select:focus, input:focus  {
+a:focus,
+button:focus nav>ul>li:focus,
+span:focus,
+label:focus,
+select:focus,
+input:focus {
     outline: 2px solid rgb(96, 210, 255);
 }
 
 /*hover states*/
 
-a:hover, button:hover{
+
+
+a:hover,
+button:hover {
     cursor: pointer;
 }
 
-section:nth-of-type(8) ul li a:hover {
-    background-color: green;
+main>section:not(section:first-of-type)>a:hover,
+/* main section a:hover, */
+main>section>ul>li>a:hover,
+main>section:nth-of-type(8) ul:first-of-type li a:hover {
+    background-color: rgb(202, 203, 207);
+}
+
+section:nth-of-type(8)>a:last-of-type:hover {
+    background-color: rgb(14, 29, 97)
 }
 
 footer div section ul li a:hover {
@@ -859,27 +929,31 @@ section:nth-of-type(8) ul:nth-of-type(2) li:active {
     background-color: var(--huiskleurblauw);
 }
 
+a:active {
+    background-color: var(--huiskleurblauw);
+}
+
 /*mediaqueries1 bij 60em veranderd het naar desktop********************************************************************************/
 
 @media (min-width:43em) {
-    main>section:nth-of-type(4) ul{
+    main>section:nth-of-type(4) ul {
         flex-direction: row;
         justify-content: center;
     }
 }
 
 @media (min-width:45em) {
-    img:not(section:first-of-type>a>img){
+    main>img:not(section:first-of-type>a>img) {
         max-width: 30em;
     }
 
     section:nth-of-type(3),
-    section:nth-of-type(5), 
+    section:nth-of-type(5),
     section:nth-of-type(6),
     section:nth-of-type(7),
     section:nth-of-type(10),
     section:nth-of-type(11),
-    section:nth-of-type(12){
+    section:nth-of-type(12) {
         grid-template-columns: 1fr 1fr;
         justify-content: center;
     }
@@ -888,9 +962,9 @@ section:nth-of-type(8) ul:nth-of-type(2) li:active {
     section:nth-of-type(3) h3,
     section:nth-of-type(6) h3,
     section:nth-of-type(10) h3,
-    section:nth-of-type(12) h3{
-       grid-column-start: 1;
-       grid-row-start: 1;
+    section:nth-of-type(12) h3 {
+        grid-column-start: 1;
+        grid-row-start: 1;
     }
 
     section:nth-of-type(3) p,
@@ -900,66 +974,133 @@ section:nth-of-type(8) ul:nth-of-type(2) li:active {
     section:nth-of-type(10) p,
     section:nth-of-type(10) a,
     section:nth-of-type(12) p,
-    section:nth-of-type(12) a{
+    section:nth-of-type(12) a {
         grid-column-start: 1;
     }
 
     section:nth-of-type(3) img,
     section:nth-of-type(6) img,
     section:nth-of-type(10) img,
-    section:nth-of-type(12) img{
+    section:nth-of-type(12) img {
         grid-column-start: 2;
         grid-row-start: 1;
-        grid-row-end:4;
+        grid-row-end: 4;
     }
 
     /*section grid indeling*/
     section:nth-of-type(5) h3,
     section:nth-of-type(7) h3,
-    section:nth-of-type(11) h3{
+    section:nth-of-type(11) h3 {
         grid-column-start: 2;
         grid-row-start: 1;
-     }
- 
+    }
+
     section:nth-of-type(5) p,
     section:nth-of-type(5) a,
     section:nth-of-type(7) p,
     section:nth-of-type(7) a,
     section:nth-of-type(11) p,
-    section:nth-of-type(11) a{
+    section:nth-of-type(11) a {
         grid-column-start: 2;
-     }
- 
+    }
+
     section:nth-of-type(5) img,
     section:nth-of-type(7) img,
-    section:nth-of-type(11) img{
+    section:nth-of-type(11) img {
         grid-column-start: 1;
         grid-row-start: 1;
-        grid-row-end:4;
-     }
+        grid-row-end: 4;
+    }
 }
 
-
-
-
-
-
+/*breakingpoint*/
 @media (min-width:62em) {
-    /*menu nar styling*/
 
+    /*menu bar styling*/
+    nav {
+        height: 7em;
+        background-color: var(--sectioncolor1);
+    }
+
+    /*menubar icons die nu te voorschijn komen*/
+    nav>div:last-of-type {
+        display: inline;
+    }
+
+    nav>div:last-of-type>ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    /*elementen verbergen die niet nodig zijn*/
+    nav>button,
+    nav>ul:first-of-type>li:last-of-type,
+    nav>ul:last-of-type>li:first-of-type,
+    nav>ul:last-of-type>li:nth-of-type(2),
+    nav>ul:last-of-type>li:nth-of-type(3),
+    nav>ul:last-of-type>li:nth-of-type(9),
+    nav>ul:last-of-type>li:nth-of-type(10),
+    nav>ul:last-of-type>li:nth-of-type(11) {
+        display: none;
+    }
+
+    nav>ul:last-of-type img {
+        display: none;
+    }
+
+    /*styling voor de nieuwe elementen op scherm*/
+
+    nav>div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    nav>ul:first-of-type {
+        background-color: transparent;
+    }
+
+    nav>div>ul {
+        margin: 1.2em;
+        gap: 0.8em;
+    }
+
+    nav>div>ul>li {
+        display: flex;
+        flex-direction: row;
+        background-color: var(--whitecolor);
+        border: 4px solid white;
+        border-radius: 2em;
+        box-shadow: 2px 2px 4px rgb(212, 212, 212), -2px -2px 4px rgb(212, 212, 212);
+        height: 1.3em;
+        padding: 0.3em;
+    }
+
+    /*de opties van de menu desktop versie*/
+    nav>ul:last-of-type {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        position: absolute;
+        background-color: transparent;
+        text-align: center;
+        font-size: 14px;
+        height: fit-content;
+        gap: 1.5em;
+        transform: translateY(-20%);
+    }
 
     /*section verdeling*/
     section:nth-of-type(3),
-    section:nth-of-type(5), 
+    section:nth-of-type(5),
     section:nth-of-type(6),
     section:nth-of-type(7),
     section:nth-of-type(10),
     section:nth-of-type(11),
-    section:nth-of-type(12){
+    section:nth-of-type(12) {
         grid-template-columns: 40% 40%;
     }
-    
-
 
     /*styling voor booking*/
     main>section:first-of-type>a>img {
@@ -978,7 +1119,7 @@ section:nth-of-type(8) ul:nth-of-type(2) li:active {
         justify-content: space-evenly;
     }
 
-    main>section:nth-of-type(2)>div:first-of-type>form{
+    main>section:nth-of-type(2)>div:first-of-type>form {
         display: flex;
         flex-direction: column;
         width: fit-content;
@@ -991,7 +1132,7 @@ section:nth-of-type(8) ul:nth-of-type(2) li:active {
     }
 
     main>section:nth-of-type(2)>div:first-of-type form div div label {
-        padding-right:0;
+        padding-right: 0;
     }
 
     main>section:nth-of-type(2) div:first-of-type form div div div {
@@ -1000,32 +1141,32 @@ section:nth-of-type(8) ul:nth-of-type(2) li:active {
     }
 
     main>section:nth-of-type(2) div:first-of-type form div div div input[type=date] {
-        padding:0;
-        height:33px;
-        margin:0;
+        padding: 0;
+        height: 33px;
+        margin: 0;
     }
-    
+
     main>section:nth-of-type(2) div:first-of-type form div div:first-of-type {
         padding-bottom: 0;
-        padding-left:0;
+        padding-left: 0;
     }
-    
+
     /*hotels en resorts*/
-    main>section:nth-of-type(2)>div:first-of-type>form>div>div:nth-of-type(2){
+    main>section:nth-of-type(2)>div:first-of-type>form>div>div:nth-of-type(2) {
         width: 20%;
         padding-bottom: 0;
     }
-    
+
     /*kamers en gasten*/
     main>section:nth-of-type(2)>div:first-of-type>form>div>div:nth-of-type(3) {
         width: 20%;
         padding-bottom: 0;
     }
-    
+
     /*vind prijzen*/
     main>section:nth-of-type(2) div:first-of-type form input[type=submit] {
-        padding-right:1em;
-        padding-left:1em;
+        padding-right: 1em;
+        padding-left: 1em;
         padding-bottom: auto;
         padding-top: auto;
         margin-top: 2em;
@@ -1033,17 +1174,19 @@ section:nth-of-type(8) ul:nth-of-type(2) li:active {
 
         width: 20%;
     }
+
 }
 
 @media (min-width:90em) {
+
     /*section verdeling*/
     section:nth-of-type(3),
-    section:nth-of-type(5), 
+    section:nth-of-type(5),
     section:nth-of-type(6),
     section:nth-of-type(7),
     section:nth-of-type(10),
     section:nth-of-type(11),
-    section:nth-of-type(12){
+    section:nth-of-type(12) {
         grid-template-columns: 35% 35%;
     }
 
@@ -1053,3 +1196,228 @@ section:nth-of-type(8) ul:nth-of-type(2) li:active {
     }
 }
 
+
+
+
+
+/*infopagina styling***************************************************************************************************/
+/***************************************************************************************************************************/
+
+/*mobile site*/
+
+section.infoSection1 {
+    margin: 0;
+    padding: 0;
+    background-color: var(--sectioncolor2);
+
+}
+
+/*heading img een goede size geven*/
+section.infoSection1>img {
+    width: 100%;
+    border-radius: 0;
+}
+
+section.infoSection1>section>img:first-of-type {
+    display: none;
+}
+
+/*section achtergrond styling/algemene styling voor de bg*/
+section.infoSection1>section {
+    display: flex;
+    flex-direction: column;
+    border-radius: 1em;
+    background-color: var(--sectioncolor1);
+
+    box-shadow: 5px 5px 8px rgb(206, 206, 206), -2px -2px 8px rgb(206, 206, 206);
+    margin-bottom: 2em;
+}
+
+section.infoSection1>section>article>h2,
+section.infoSection1>section>article>a>h2 {
+    margin-bottom: 1.5em;
+}
+
+/*centreren van de section*/
+section.infoSection1>section>article {
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 85vw;
+}
+
+section.infoSection1>section>article>a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+/*article img size*/
+section.infoSection1>section>article>a>img {
+    text-align: center;
+    height: 50vw;
+    order: -1;
+}
+
+/*article orders*/
+section.infoSection1>section>article>a>h3 {
+    order: 1;
+}
+
+section.infoSection1>section>article>a>p {
+    order: 2;
+}
+
+/*de eerste article styling*/
+section.infoSection1>section>article:first-of-type>p:first-of-type {
+    margin-bottom: 1em;
+}
+
+section.infoSection1>section>article:first-of-type {
+    padding-top: 2em;
+}
+
+/*openings tijden styling*/
+section.infoSection1>section>article:nth-of-type(2)>h2,
+section.infoSection1>section>article>a>h3 {
+    margin-top: 1em;
+}
+
+section.infoSection1>section>article:nth-of-type(2)>p {
+    margin-bottom: 1em;
+    font-size: 0.8em;
+}
+
+section.infoSection1>section>article:nth-of-type(2)>p:last-of-type {
+    margin-bottom: 2em
+}
+
+section.infoSection1>section>article:nth-of-type(2) {
+    background-color: rgb(230, 246, 255);
+}
+
+/*articles vanaf article 3 goed stylen*/
+section.infoSection1>section>img {
+    width: 88vw;
+}
+
+section.infoSection1>section>article>a>h3,
+section.infoSection1>section>article>a>p {
+    width: 90%;
+}
+
+section.infoSection1>section>article>a>h3 {
+    font-size: 1em;
+    margin-bottom: 0.5em;
+}
+
+section.infoSection1>section>article>a>p {
+    font-size: 0.8em;
+}
+
+/*arrow styling*/
+section.infoSection1>section>article>a>img:nth-last-of-type(2),
+section.infoSection1>section>article>a>img:last-of-type {
+    position: absolute;
+    right: 7.5vw;
+    transform: translateY(55vw);
+    height: 2em;
+    width: auto;
+}
+
+/*hiding de hover arrow*/
+section.infoSection1>section>article>a>img:last-of-type {
+    display: none;
+}
+
+/*deelknop*/
+section.infoSection1>section>a {
+    padding-left: 3em;
+    padding-bottom: 2em;
+    background-image: url(./images/deelknop.png);
+    background-repeat: no-repeat;
+    background-position: bottom 1.8em left 0.8em;
+    text-decoration: none;
+}
+
+/*de states***********************************/
+/*de hover state*/
+section.infoSection1>section>article>a:hover img.hoverArrow {
+    display: inline;
+}
+
+section.infoSection1 a:hover {
+    color: rgb(60, 144, 241)
+}
+
+
+
+/*door de eerste meida query voor index strekte de afbeeldingen niet mee dus van daar dit*/
+@media (min-width:45em) {
+    section.infoSection1>img {
+        max-width: 300em;
+    }
+}
+
+/*breakingpoint*/
+@media (min-width:63em) {
+    section.infoSection1>img {
+        display: none;
+    }
+
+    /*header foto te voorschijn halen*/
+    section.infoSection1>section>img:first-of-type {
+        display: inline;
+        border-radius: 1em;
+        width: 85vw;
+        margin-left: 1em;
+        margin-right: 1em;
+        max-width: 60em;
+        margin-top: 5em;
+    }
+
+    section.infoSection1>section {
+        display: flex;
+        max-width: 62em;
+        margin-top: 3em;
+    }
+
+
+    section.infoSection1>section>img,
+    section.infoSection1>section>article {
+        max-width: 70%;
+    }
+
+    section.infoSection1>section>article>a {
+        max-width: 60vw;
+    }
+
+    section.infoSection1>section>article>a>img:first-of-type {
+        max-height: 50vh;
+    }
+
+    section.infoSection1>section>article>a>img:nth-last-of-type(2) {
+        display: block;
+        opacity: 0;
+    }
+
+    /*openings tijden styling*/
+    section.infoSection1>section>article:nth-of-type(2) {
+        position: absolute;
+        align-self: flex-end;
+        transform: translateY(50vh);
+        width: 20%;
+        max-width: 13em;
+        border-radius: 1em;
+        margin: 1em;
+        margin-top: 3em;
+    }
+
+    /*eerste article styling*/
+    section.infoSection1>section>article:first-of-type {
+        transform: translateY(-5em);
+    }
+
+    section.infoSection1>section>article:first-of-type>h2:first-of-type {
+        transform: translateY(-17em);
+    }
+}

@@ -13,6 +13,9 @@ let isDown = false;
 let startX;
 let scrollLeft;
 
+var windowURL = window.location.href;
+
+if (windowURL.includes("index")) {
 slider.addEventListener("mousedown", e => {
   isDown = true;
   slider.classList.add("active");
@@ -34,4 +37,4 @@ slider.addEventListener("mousemove", e => {
   const walk = x - startX;
   slider.scrollLeft = scrollLeft - walk;
 });
-
+}
