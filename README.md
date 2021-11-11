@@ -200,8 +200,8 @@ Maar na mijn idee ging niet alles persé slecht. Zo heb ik veel nieuwe dingen ge
 ### Screenshot(s)
 
 Eindresultaat
-<img src="./images/FEDpagina1mobile.png" width="375px" alt="pagina 1">
-<img src="./images/FEDpagina2mobile.png" width="375px" alt="pagina 2">
+<img src="./images/FEDpage1mobile.png" width="375px" alt="pagina 1">
+<img src="./images/FEDpage2mobile.png" width="375px" alt="pagina 2">
 
 </details>
 
